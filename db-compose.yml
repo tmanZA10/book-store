@@ -1,0 +1,9 @@
+
+services:
+  book-store-db:
+    image: mysql:8.0-bookworm
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: book_store_db
+    ports:
+      - "3306:3306"
